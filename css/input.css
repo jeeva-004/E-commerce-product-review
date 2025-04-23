@@ -21,6 +21,7 @@ body header .logo {
   height: 20px;
 }
 body header ul {
+  position: relative;
   display: flex;
   font-size: 1rem;
   color: hsl(219, 9%, 45%);
@@ -28,6 +29,17 @@ body header ul {
 body header ul li {
   margin-right: 30px;
   font-weight: 400;
+}
+
+header li:hover::after {
+  content: "";
+  position: absolute;
+  width: fit-content;
+  width: 30px;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  background-color: hsl(26, 100%, 55%);
 }
 
 header .basket-profile img:nth-child(1) {
