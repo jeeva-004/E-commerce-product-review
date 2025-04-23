@@ -1,0 +1,24 @@
+{
+  "name": "e-commerce-product-review",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass --watch ./scss/index.scss ./css/input.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeeva-004/E-commerce-product-review.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeeva-004/E-commerce-product-review/issues"
+  },
+  "homepage": "https://github.com/jeeva-004/E-commerce-product-review#readme",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.87.0"
+  }
+}

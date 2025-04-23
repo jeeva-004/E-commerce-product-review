@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Kumbh+Sans:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+// variables
+
+$paragraph-color: hsl(219, 9%, 45%);
+$dark-color: hsl(220, 13%, 13%);
+$tomato-color: hsl(26, 100%, 55%);
+$opacity-color: hsl(25, 100%, 94%);
+$background-color: hsl(0, 0%, 100%);
+
+html {
+    font: 16px "Bai Jamjuree", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: $background-color;
+    outline: 0;
+
+    header {
+        width: 100%;
+        height: 15vh;
+
+        .logo {
+            width: 12%;
+            height: 20px;
+        }
+
+        ul {
+            display: flex;
+            font-size: 1rem;
+            color: $paragraph-color;
+
+            li {
+                margin-right: 30px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+header .basket-profile img:nth-child(1){
+    width: 20px;
+    height: 20px;
+    color: black;
+}
+header .basket-profile img:nth-child(1):hover{
+    cursor: pointer;
+}
+
+header .basket-profile img:nth-child(2){
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: all .15s ease;
+}
+header .basket-profile img:nth-child(2):hover{
+    cursor: pointer;
+    border: 2px solid $tomato-color;
+}
+        
