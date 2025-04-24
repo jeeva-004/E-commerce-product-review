@@ -32,7 +32,6 @@ body {
         }
 
         ul {
-            position: relative;
             display: flex;
             font-size: 1rem;
             color: $paragraph-color;
@@ -45,15 +44,23 @@ body {
     }
 }
 
-header li:hover::after {
+header a {
+    position: relative;
+}
+
+header a::after {
     content: '';
     position: absolute;
-    width: fit-content;
-    width: 30px;
+    width: 0;
     height: 3px;
     left: 0;
-    bottom: 0;
+    bottom: -20px;
     background-color: $tomato-color;
+    transition: all .15s ease;
+}
+
+header a:hover::after {
+    width: 100%;
 }
 
 header .basket-profile img:nth-child(1) {
@@ -77,3 +84,5 @@ header .basket-profile img:nth-child(2):hover {
     cursor: pointer;
     border: 2px solid $tomato-color;
 }
+
+
