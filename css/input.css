@@ -18,7 +18,7 @@ body header {
   border: 1px solid;
 }
 body header .logo {
-  width: 12%;
+  width: 75%;
   height: 20px;
 }
 body header ul {
@@ -90,8 +90,17 @@ header .basket-profile img:nth-child(2):hover {
   background-color: hsl(26, 100%, 55%);
 }
 
+.hamburger {
+  width: 25px;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+}
+
 .all-images img {
-  width: 200px;
+  width: 100px;
 }
 
 /*# sourceMappingURL=input.css.map */

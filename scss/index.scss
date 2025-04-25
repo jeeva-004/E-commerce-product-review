@@ -27,7 +27,7 @@ body {
         height: 15vh;
         border: 1px solid;
         .logo {
-            width: 12%;
+            width: 75%;
             height: 20px;
         }
 
@@ -103,6 +103,15 @@ header .basket-profile img:nth-child(2):hover {
     background-color: $tomato-color;
 }
 
+.hamburger{
+    width: 25px;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
+
 .all-images img{
-    width: 200px;
+    width: 100px;
 }
