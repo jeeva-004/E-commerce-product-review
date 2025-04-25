@@ -12,7 +12,7 @@
 
 <body>
   <header class="flex px-25 justify-between items-center">
-    <img src="./images/icon-menu.svg" alt="hamburger" class=" hidden hamburger">
+    <img src="./images/icon-menu.svg" alt="hamburger" class=" flex md:hidden hamburger mr-3">
     <img src="./images/logo.svg" alt="Logo-image" class="logo flex-none">
     <nav class="flex-1">
       <ul class="pl-20 ">
@@ -24,21 +24,21 @@
       </ul>
     </nav>
     <div class="basket-profile flex justify-center items-center gap-8">
-      <div class="purchased"><img src="./images/icon-cart.svg" alt="basket"><span class="basket"></span></div>
+      <div class="purchased"><img src="./images/icon-cart.svg" alt="basket"><span class="basket">2</span></div>
       <img src="./images/image-avatar.png" alt="profile" class="profile">
     </div>
   </header>
-  <main>
-    <div class="product-image">
-      <img src="./images/image-product-1.jpg" alt="" class="preview">
-      <div class="all-images">
-        <img src="./images/image-product-1.jpg" alt="">
-        <img src="./images/image-product-2.jpg" alt="">
-        <img src="./images/image-product-3.jpg" alt="">
-        <img src="./images/image-product-4.jpg" alt="">
+  <main class="flex">
+    <div class="product-image flex flex-column justify-center flex-1">
+      <img src="./images/image-product-1.jpg" alt="" class="preview" width="300px">
+      <div class="all-images flex">
+        <img src="./images/image-product-1.jpg" class="preview-img" alt="">
+        <img src="./images/image-product-2.jpg" class="preview-img" alt="">
+        <img src="./images/image-product-3.jpg" class="preview-img" alt="">
+        <img src="./images/image-product-4.jpg" class="preview-img" alt="">
       </div>
     </div>
-    <div class="product-detail">
+    <div class="product-detail flex-1">
 
       <h4 class="company-name">Sneaker Company</h4>
 
