@@ -27,10 +27,21 @@ body header ul {
   color: hsl(219, 9%, 45%);
 }
 body header ul li {
-  margin-right: 30px;
   font-weight: 400;
 }
 
+nav {
+  animation: slideMenu 0.25s ease forwards;
+}
+
+@keyframes slideMenu {
+  0% {
+    left: -10px;
+  }
+  100% {
+    left: 0;
+  }
+}
 header a {
   position: relative;
 }

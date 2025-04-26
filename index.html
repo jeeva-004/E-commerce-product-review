@@ -11,19 +11,20 @@
 </head>
 
 <body>
-  <header class="flex px-5 md:px-35  justify-between items-center">
+  <header class="flex px-5 md:px-35 relative justify-between items-center">
     <div class="logo-menu flex gap-5">
-      <img src="./images/icon-menu.svg" alt="hamburger" class="hamburger flex-1 md:hidden">
+      <img src="./images/icon-menu.svg" alt="hamburger" class="hamburger cursor-pointer flex-1 md:hidden">
       <img src="./images/logo.svg" alt="Logo-image" class="logo">
     </div>
-    <nav class="flex-1 hidden md:flex">
-      <ul class="flex-col md:flex-row ms-20">
-        <li><a href="#">Men</a></li>
-        <li><a href="#">Collections</a></li>
-        <li><a href="#">Women</ a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+    <nav class="flex-1 absolute bg-white md:bg-transparent md:static top-0 left-0 w-60 md:w-auto h-screen md:h-auto m-0 text-center hidden z-1 md:flex justify-between">
+      <ul class="flex-col gap-3 mt-8 md:mt-0 w-screen md:w-auto md:flex-row ms-0 md:ms-10">
+        <li><a href="#" class="mr-0 md:mr-8">Men</a></li>
+        <li><a href="#" class="mr-0 md:mr-8">Collections</a></li>
+        <li><a href="#" class="mr-0 md:mr-8">Women</a></li>
+        <li><a href="#" class="mr-0 md:mr-8">About</a></li>
+        <li><a href="#" class="mr-0 md:mr-8">Contact</a></li>
       </ul>
+      <img src="./images/icon-close.svg" alt="" class="close flex md:hidden self-start item-start w-10 cursor-pointer mt-2 me-2">
     </nav>
     <div class="basket-profile flex items-center gap-8 md:gap-5 " >
       <div class="purchased"><img src="./images/icon-cart.svg" alt="basket"><span class="basket">2</span></div>

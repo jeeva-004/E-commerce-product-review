@@ -37,10 +37,22 @@ body {
             color: $paragraph-color;
 
             li {
-                margin-right: 30px;
                 font-weight: 400;
             }
         }
+    }
+}
+
+nav{
+    animation: slideMenu .25s ease forwards;
+}
+
+@keyframes slideMenu {
+    0%{
+        left: -10px;
+    }
+    100%{
+        left: 0;
     }
 }
 
