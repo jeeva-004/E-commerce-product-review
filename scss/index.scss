@@ -25,7 +25,7 @@ body {
     header {
         width: 100%;
         height: 15vh;
-        border: 1px solid;
+
         .logo {
             width: 75%;
             height: 20px;
@@ -43,21 +43,26 @@ body {
     }
 }
 
-nav{
-    animation: slideMenu .25s ease forwards;
+nav {
+    animation: slideMenu .35s ease forwards;
 }
 
 @keyframes slideMenu {
-    0%{
+    0% {
         left: -10px;
     }
-    100%{
+
+    100% {
         left: 0;
     }
 }
 
 header a {
     position: relative;
+}
+
+header a:hover {
+    color: $dark-color;
 }
 
 header a::after {
@@ -98,10 +103,10 @@ header .basket-profile img:nth-child(2):hover {
 }
 
 .purchased {
-    position:relative;
+    position: relative;
 }
 
-.basket{
+.basket {
     width: 18px;
     height: 18px;
     border-radius: 45%;
@@ -115,15 +120,45 @@ header .basket-profile img:nth-child(2):hover {
     background-color: $tomato-color;
 }
 
-.hamburger{
+.hamburger {
     width: 25px;
 }
 
-main{
-    width: 80%;
-    margin: auto;
+
+.line {
+    border-top: 1px solid $paragraph-color;
 }
 
-.all-images img{
+section {
+    border: 1px solid;
+}
+
+.company-name{
+    color: $paragraph-color;
+}
+
+h1{
+    color: $dark-color;
+}
+
+p{
+    color: $paragraph-color;
+}
+
+.price-details{
+    width: 150px;
+}
+
+.offer{
+    padding: 2px 5px;
+    background-color: black;
+    color: $background-color;
+}
+
+.original-price{
+    color: $paragraph-color;
+}
+
+.all-images img {
     width: 100px;
 }

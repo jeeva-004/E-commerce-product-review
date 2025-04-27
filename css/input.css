@@ -15,7 +15,6 @@ body {
 body header {
   width: 100%;
   height: 15vh;
-  border: 1px solid;
 }
 body header .logo {
   width: 75%;
@@ -31,7 +30,7 @@ body header ul li {
 }
 
 nav {
-  animation: slideMenu 0.25s ease forwards;
+  animation: slideMenu 0.35s ease forwards;
 }
 
 @keyframes slideMenu {
@@ -44,6 +43,10 @@ nav {
 }
 header a {
   position: relative;
+}
+
+header a:hover {
+  color: hsl(220, 13%, 13%);
 }
 
 header a::after {
@@ -105,9 +108,38 @@ header .basket-profile img:nth-child(2):hover {
   width: 25px;
 }
 
-main {
-  width: 80%;
-  margin: auto;
+.line {
+  border-top: 1px solid hsl(219, 9%, 45%);
+}
+
+section {
+  border: 1px solid;
+}
+
+.company-name {
+  color: hsl(219, 9%, 45%);
+}
+
+h1 {
+  color: hsl(220, 13%, 13%);
+}
+
+p {
+  color: hsl(219, 9%, 45%);
+}
+
+.price-details {
+  width: 150px;
+}
+
+.offer {
+  padding: 2px 5px;
+  background-color: black;
+  color: hsl(0, 0%, 100%);
+}
+
+.original-price {
+  color: hsl(219, 9%, 45%);
 }
 
 .all-images img {

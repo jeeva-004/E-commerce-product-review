@@ -16,49 +16,54 @@
       <img src="./images/icon-menu.svg" alt="hamburger" class="hamburger cursor-pointer flex-1 md:hidden">
       <img src="./images/logo.svg" alt="Logo-image" class="logo">
     </div>
-    <nav class="flex-1 absolute bg-white md:bg-transparent md:static top-0 left-0 w-60 md:w-auto h-screen md:h-auto m-0 text-center hidden z-1 md:flex justify-between">
-      <ul class="flex-col gap-3 mt-8 md:mt-0 w-screen md:w-auto md:flex-row ms-0 md:ms-10">
-        <li><a href="#" class="mr-0 md:mr-8">Men</a></li>
-        <li><a href="#" class="mr-0 md:mr-8">Collections</a></li>
-        <li><a href="#" class="mr-0 md:mr-8">Women</a></li>
-        <li><a href="#" class="mr-0 md:mr-8">About</a></li>
-        <li><a href="#" class="mr-0 md:mr-8">Contact</a></li>
+    <nav
+      class="flex-1 absolute bg-white md:bg-transparent md:static top-0 left-0 w-60 md:w-auto h-screen md:h-auto m-0 text-center hidden z-1 md:flex justify-between">
+      <ul class="flex-col gap-7 mt-8 md:mt-0 w-screen md:w-auto md:flex-row ms-0 md:ms-10">
+        <li><a href="#" class="mr-0 md:mr-5">Men</a></li>
+        <li><a href="#" class="mr-0 md:mr-5">Collections</a></li>
+        <li><a href="#" class="mr-0 md:mr-5">Women</a></li>
+        <li><a href="#" class="mr-0 md:mr-5">About</a></li>
+        <li><a href="#" class="mr-0 md:mr-5">Contact</a></li>
       </ul>
-      <img src="./images/icon-close.svg" alt="" class="close flex md:hidden self-start item-start w-10 cursor-pointer mt-2 me-2">
+      <img src="./images/icon-close.svg" alt=""
+        class="close flex md:hidden self-start item-start w-10 cursor-pointer mt-2 me-2">
     </nav>
-    <div class="basket-profile flex items-center gap-8 md:gap-5 " >
+    <div class="basket-profile flex items-center gap-8 md:gap-7 ">
       <div class="purchased"><img src="./images/icon-cart.svg" alt="basket"><span class="basket">2</span></div>
       <img src="./images/image-avatar.png" alt="profile" class="profile">
     </div>
   </header>
-  <main>
-    <div class="product-image">
-      <img src="./images/image-product-1.jpg" alt="" class="preview" width="350px">
-      <div class="all-images flex gap-3">
-        <img src="./images/image-product-1.jpg" class="preview-img" alt="">
-        <img src="./images/image-product-2.jpg" class="preview-img" alt="">
-        <img src="./images/image-product-3.jpg" class="preview-img" alt="">
-        <img src="./images/image-product-4.jpg" class="preview-img" alt="">
+  <div class="line w-full mx-auto md:w-5/6"></div>
+  <main class="flex w-screen justify-center items-center">
+    <section class="flexcol gap-10 w-full md:w-3/4 md:flex mt-0 md:mt-15" >
+      <div class="product-image flex-1 border-1">
+        <img src="./images/image-product-1.jpg" alt="" class="preview" width="350px">
+        <div class="all-images flex gap-3">
+          <img src="./images/image-product-1.jpg" class="preview-img" alt="">
+          <img src="./images/image-product-2.jpg" class="preview-img" alt="">
+          <img src="./images/image-product-3.jpg" class="preview-img" alt="">
+          <img src="./images/image-product-4.jpg" class="preview-img" alt="">
+        </div>
       </div>
-    </div>
-    <div class="product-detail">
+      <div class="product-detail pr-0 md:pr-15 pt-0 md:pt-8 flex-1">
+        <h4 class="company-name text-sm my-2 tracking-wide uppercase ">Sneaker Company</h4>
 
-      <h4 class="company-name">Sneaker Company</h4>
+        <h1 class="text-4xl font-bold">Fall Limited Edition Sneakers</h1>
 
-      <h1>Fall Limited Edition Sneakers</h1>
-
-      <p>These low-profile sneakers are your perfect casual wear companion. Featuring a
-        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
-      <div class="price-details">
-        <h2>$125.00</h2>
-        <div class="offer">50%</div>
+        <p class="mt-2 md:mt-5 leading-7 text-sm md:text-base">These low-profile sneakers are your perfect casual wear companion. Featuring a
+          durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+        <div class="price-details flex gap-3 items-center mt-5 mb-2 ">
+          <h2 class="font-bold">$125.00</h2>
+          <div class="offer font-bold rounded text-xs">50%</div>
+        </div>
+        <small class="original-price font-bold line-through">$250.00</small>
+        <div class="add-to-cart flex border-1 mt-8 px-10 justify-around">
+          <div class="items border-1 flex-1 flex justify-around"><span>+</span> <span>0</span> <span>-</span> </div>
+          <button class="text-center flex-1 border-1">Add to cart</button>
+        </div>
       </div>
-      <small class="original-price">$250.00</small>
-      <div class="add-to-cart">
-        <div class="items"> 0</div>
-        <button>Add to cart</button>
-      </div>
-    </div>
+    </section>
+
   </main>
   <script src="./script.js"></script>
 </body>
