@@ -11,6 +11,7 @@ body {
   box-sizing: border-box;
   background-color: hsl(0, 0%, 100%);
   outline: 0;
+  user-select: none;
 }
 body header {
   width: 100%;
@@ -110,7 +111,24 @@ header .basket-profile img:nth-child(2):hover {
 }
 
 .line {
+  position: relative;
   border-top: 1px solid hsl(219, 9%, 45%);
+}
+
+.cart-details {
+  width: 23%;
+  height: 200px;
+  position: absolute;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0 3px 20px hsl(219, 9%, 45%);
+  top: 98px;
+  border-radius: 10px;
+  right: 109px;
+  z-index: 1;
+}
+.cart-details h2 {
+  color: hsl(220, 13%, 13%);
 }
 
 .company-name {
@@ -151,8 +169,20 @@ p {
   color: hsl(220, 13%, 13%);
 }
 
+.quantity {
+  font-size: 1.3rem;
+}
+
+.items {
+  background-color: hsl(0, 5%, 83%);
+}
+
 .add-to-cart span {
   cursor: pointer;
+}
+
+.add-to-cart div:nth-child(2):hover {
+  opacity: 0.9;
 }
 
 .product-image {
@@ -163,9 +193,9 @@ p {
   width: 35px;
   height: 35px;
   position: absolute;
-  font-size: 1.3rem;
+  font-size: 1rem;
   text-align: center;
-  font-weight: bold;
+  font-weight: bolder;
   color: hsl(220, 13%, 13%);
   border-radius: 50%;
   background-color: #fff;
