@@ -72,6 +72,7 @@ header a::after {
     height: 3px;
     left: 0;
     bottom: -20px;
+    border-radius: 10px;
     background-color: $tomato-color;
     transition: all .15s ease;
 }
@@ -129,10 +130,6 @@ header .basket-profile img:nth-child(2):hover {
     border-top: 1px solid $paragraph-color;
 }
 
-section {
-    border: 1px solid;
-}
-
 .company-name{
     color: $paragraph-color;
 }
@@ -159,6 +156,47 @@ p{
     color: $paragraph-color;
 }
 
+.add-to-cart div:nth-child(2){
+    background-color: $tomato-color;
+}
+
+.add-to-cart div:nth-child(1)>span:nth-child(2){
+    color: $dark-color;
+}
+.add-to-cart div:nth-child(2)>span{
+    color: $dark-color;
+}
+
+.add-to-cart span{
+    cursor: pointer;
+}
+
+.product-image{
+    position: relative;
+}
+
+.backward, .forward{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+    color: $dark-color;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.backward{
+    top: 220px;
+    left: 20px;
+}
+
+.forward{
+    top: 220px;
+    right: 20px;
+}
+
 .all-images img {
-    width: 100px;
+    width: 79px;
 }
