@@ -27,6 +27,8 @@ document.querySelector('.button').addEventListener('click', () => {
     const product = item_count.innerHTML;
     if (product > 0)
         cart.innerHTML = product;
+    else
+        cart.innerHTML = 0;
     if (cart.innerHTML > 0)
         cart.style.display = 'block';
 })
@@ -94,6 +96,28 @@ img_4.addEventListener('click', () => {
     img_2.classList.remove('active')
     img_4.classList.add('active')
 })
+
+
+// display cart details 
+let empty_cart = document.querySelector('.empty-cart');
+let item_cart = document.querySelector('.item-cart');
+let no_of_item = document.querySelector('.no-of-item');
+let rate = document.querySelector('.rate');
+basket.addEventListener('click', ()=>{
+    if(cart.innerHTML ==0){
+        item_cart.style.display = 'none';
+        empty_cart.style.display = 'flex';
+    }
+    else{
+        item_cart.style.display = 'flex';
+        no_of_item.innerHTML = item_count.innerHTML;
+        let answer = 125*item_count.innerHTML;
+        rate.innerHTML = '$'+answer;
+        empty_cart.style.display = 'none';
+    }
+})
+
+
 
 
 

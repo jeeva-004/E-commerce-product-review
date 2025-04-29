@@ -124,6 +124,7 @@ header .basket-profile img:nth-child(2):hover {
 
 .cart-details {
   height: 200px;
+  display: none;
   margin: auto;
   background-color: white;
   box-shadow: 0 1px 5px hsl(219, 9%, 45%);
@@ -209,7 +210,7 @@ p {
 .item-cart {
   height: 80%;
   width: 100%;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
