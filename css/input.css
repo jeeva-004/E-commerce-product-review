@@ -123,15 +123,12 @@ header .basket-profile img:nth-child(2):hover {
 }
 
 .cart-details {
-  width: 23%;
   height: 200px;
-  position: absolute;
   margin: auto;
   background-color: white;
   box-shadow: 0 1px 5px hsl(219, 9%, 45%);
   top: 98px;
   border-radius: 10px;
-  right: 109px;
   z-index: 1;
   animation: slide_bottom 0.35s ease;
 }
@@ -217,7 +214,8 @@ p {
   position: relative;
 }
 
-.backward, .forward {
+.backward,
+.forward {
   width: 30px;
   height: 30px;
   position: absolute;
@@ -242,6 +240,16 @@ p {
 
 .all-images img {
   width: 79px;
+  transition: opacity 0.15s ease;
+  cursor: pointer;
+}
+.all-images img:hover {
+  opacity: 0.6;
+}
+
+.active {
+  opacity: 0.6;
+  border: 2px solid hsl(16, 77%, 48%);
 }
 
 /*# sourceMappingURL=input.css.map */
